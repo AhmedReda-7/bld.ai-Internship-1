@@ -21,3 +21,6 @@
 	- [x] I. Sum Game
 	- [ ] J. Large Arrays
 	- [ ] K. Longest Subarray
+
+#### Unsolved problems
+##### Was resolved very satisfactorily by: (ahmedtaha23)[https://github.com/ahmedtaha23/bld.ai-contest1], (yousfahmed)[https://github.com/yousfahmed/competitive-programming/tree/main/Gyms/bld.ai%20Summer22%20Internship%20Contest%20%5BPractice%5D] ❤️
