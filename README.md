@@ -2,6 +2,8 @@
 
 ## C++ solutions source code for the "bld.ai Summer Internship Contest".
 
+Referenced with: [yousfahmed](https://github.com/yousfahmed/competitive-programming/tree/main/Gyms/bld.ai%20Summer22%20Internship%20Contest%20%5BPractice%5D)
+
 - Practice-Contest
 	- [x] A. MinMax
  	- [x] B. Hello Loops
