@@ -2,7 +2,7 @@
  * G-E-R-G-I-S---K
  * Let's create! <3
  *
- * Problem  D. Good Array | Solution 2
+ * Problem  D. Good Array
  */
 #include <bits/stdc++.h>
 #define fast_IO ios::sync_with_stdio(false), cin.tie(0), cout.tie(0)
