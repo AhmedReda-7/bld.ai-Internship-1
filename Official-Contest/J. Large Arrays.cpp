@@ -9,18 +9,18 @@
 using namespace std;
 typedef long long ll;
 typedef unsigned long long ull;
-const int INF   = 0x3f3f3f3f;
-const int MOD   = 1e9 + 10;
-const int N     = 1e6 + 10;
-int n, m, x, y;
+const ll INF   = 0x3f3f3f3f;
+const ll MOD   = 1e9 + 10;
+const ll N     = 1e6 + 10;
+ll n, m, x, y;
 double solve()
 {
-    auto bs = [&](int idx)
+    auto bs = [&](ll idx)
     {
-        int s = 0, e = 1e18, ans = 0;
+        ll s = 0, e = 1e18, ans = 0;
         while (s <= e)
         {
-            int mid = (e - s) / 2 + s;
+            ll mid = (e - s) / 2 + s;
             if (min(mid / x, n) + min(mid / y, m) >= idx)
                 ans = mid, e = mid - 1;
             else if (min(mid / x, n) + min(mid / y, m) <= idx)
@@ -28,7 +28,7 @@ double solve()
         }
         return ans;
     };
-    int idx = (n + m) / 2 + 1;
+    ll idx = (n + m) / 2 + 1;
     if ((n + m) & 1) return bs(idx);
     return (bs(idx) + bs(idx - 1)) / 2.0;
 }
