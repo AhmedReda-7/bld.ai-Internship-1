@@ -17,7 +17,7 @@
 	- [x] E. Lazy Writer
 	- [x] F. Longest Family Chain
 	- [ ] G. Reverse Problem
-	- [ ] H. 2D Points
+	- [x] H. 2D Points
 	- [x] I. Sum Game
 	- [x] J. Large Arrays
 	- [x] K. Longest Subarray
