@@ -19,7 +19,7 @@ Referenced with: [yousfahmed](https://github.com/yousfahmed/competitive-programm
 	- [x] E. Lazy Writer
 	- [x] F. Longest Family Chain
 	- [ ] G. Reverse Problem
-	- [x] H. 2D Points
+	- [ ] H. 2D Points
 	- [x] I. Sum Game
-	- [x] J. Large Arrays
-	- [x] K. Longest Subarray
+	- [ ] J. Large Arrays
+	- [ ] K. Longest Subarray
