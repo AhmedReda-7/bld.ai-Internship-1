@@ -13,7 +13,7 @@
 	- [x] A. Nasser and Arrays
 	- [x] B. At Least One Prime Divisor
 	- [ ] C. Three Friends
-	- [x] D. Good Array [2 Solutions]
+	- [x] D. Good Array
 	- [x] E. Lazy Writer
 	- [x] F. Longest Family Chain
 	- [ ] G. Reverse Problem
