@@ -22,15 +22,20 @@ int main()
 
     int n, x;
     cin >> n;
-    stack<int> s;
+    stack<int> bag;
     vector<int> res;
-    while (n--)
+    while (n)
     {
         cin >> x;
-        if (s.size() && s.top() == x) s.pop();
-        else s.emplace(x);
+        if (bag.size() && s.top() == x) bag.pop();
+        else bag.push(x);
+        --n;
     }
-    while (s.size()) res.emplace_back(s.top()), s.pop();
+    while (bag.size())
+    {
+        res.push_back(s.top());
+        bag.pop();
+    }
     reverse(res.begin(), res.end());
     cout << res.size() << '\n';
     for (auto i : res) cout << i << ' ';

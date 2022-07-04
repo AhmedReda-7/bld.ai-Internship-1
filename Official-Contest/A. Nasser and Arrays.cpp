@@ -20,13 +20,13 @@ int main()
 #endif
     fast_IO;
 
-    int n, x; cin >> n;
-    while(n)
+    int n; cin >> n;
+    for (int i{0}; i < n; ++i)
     {
-        cin >> x;
-        if (0 > x) ++x;
+        int a;
+        cin >> a;
+        if (0 > a) ++a;
         cout << x << ' ';
-        --n;
     }
     cout << '\n';
 

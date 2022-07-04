@@ -9,18 +9,9 @@
 using namespace std;
 typedef long long ll;
 typedef unsigned long long ull;
-const int INF   = 0x3f3f3f3f;
-const int MOD   = 1e9 + 10;
-const int N     = 1e6 + 10;
-vector<int> w;
-int n, h;
-bool solve(int x)
-{
-    int res = 0;
-    for (auto &i : w)
-        res += ((i + x - 1) / x);
-    return res <= h;
-}
+const ll INF   = 0x3f3f3f3f;
+const ll MOD   = 1e9 + 10;
+const ll N     = 1e6 + 10;
 int main()
 {
 #ifndef ONLINE_JUDGE
@@ -29,17 +20,20 @@ int main()
 #endif
     fast_IO;
 
+    int n, h;
     cin >> n >> h;
-    w.resize(n);
+    vector<int> w(n);
     for (auto &i : w) cin >> i;
-    ll s = 1, e = 1e18, m, ans;
+    ll s = 1, e = MOD, res = 0;
     while (s <= e)
     {
-        m = (e - s) / 2 + s;
-        if (solve(m)) ans = m, e = m - 1;
+        ll m = (s + e) / 2;
+        res = 0;
+        for (int i = 0; i < n; ++i) res += (w[i] + m - 1) / m;
+        if (res <= h) e = m - 1;
         else s = m + 1;
     }
-    cout << ans << '\n';
+    cout << e + 1 << '\n';
 
     return 0;
 }
