@@ -27,13 +27,13 @@ int main()
     while (n)
     {
         cin >> x;
-        if (bag.size() && s.top() == x) bag.pop();
+        if (bag.size() && bag.top() == x) bag.pop();
         else bag.push(x);
         --n;
     }
     while (bag.size())
     {
-        res.push_back(s.top());
+        res.push_back(bag.top());
         bag.pop();
     }
     reverse(res.begin(), res.end());
