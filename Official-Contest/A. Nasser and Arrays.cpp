@@ -26,7 +26,7 @@ int main()
         int a;
         cin >> a;
         if (0 > a) ++a;
-        cout << x << ' ';
+        cout << a << ' ';
     }
     cout << '\n';
 
